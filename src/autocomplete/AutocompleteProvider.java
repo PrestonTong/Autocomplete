@@ -47,7 +47,6 @@ public class AutocompleteProvider {
 		String [] words = cleanedPassage.split(" ");
 
 		for (String word: words) {
-			System.out.println(word);
 			// Increment confidence for word, or initialize to 1 if does not exist
 			if (wordMap.containsKey(word)) {
 				wordMap.put(word, wordMap.get(word) + 1);
